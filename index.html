@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <!-- <link rel="icon" type="image/x-icon" href="/images/icons8-home"> -->
+        <link rel ="stylesheet" href="style.css">
+        <script defer src="index.js"></script>
+        <script src="https://kit.fontawesome.com/37f44dda3d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!-------<canvas id="canvas"></canvas>----->        
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/profilei.png" class="logo">
+                    <ul id="sidemenu">
+                        <li> <a href="#header">Home</a></li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#services">My Skills</a></li>
+                        <li> <a href="#portfolio">Portfolio</a></li>
+                        <li> <a href="#contact">Contact </a></li>
+                        <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                        
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                        <!-- <div><i class="fa-solid fa-eye fa-fade"></i></div> -->
+                        <!-- <div class="website-counter"></div> -->
+                    
+                </nav>
+                <div class="header-text">
+                    <div class="flex-parent-element">
+                        <div><i class="flex-child-element fa-solid fa-eye fa-fade"></i></div>
+                        <div class="flex-child-element website-counter"></div>
+                    </div>
+                    <h2>Hello World</h2>
+                    <h1>Hi, I'm <span>Vishwajeet</span><br>Kumar.</h1>
+                </div>  
+            </div>
+        </div>
+<!--------About-Me---------->        
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/asdx.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Passionate and driven final-year Computer Science Engineering student. Proficient in C++, MySQL, Android Development and Web Development (HTML, CSS, JavaScript). Seeking an internship opportunity to apply and enhance my skills in a practical work environment. Experienced in building projects utilizing these technologies, showcasing my ability to translate theory into tangible solutions. Eager to contribute to a dynamic organization, collaborate with industry professionals, and make a meaningful impact. Adaptable, with strong project management and problem-solving skills. Ready to learn from experienced mentors and drive innovation. Let's connect and explore possibilities for growth and collaboration.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Hobbies</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>C/C++</span><br>Demonstrated proficiency in understanding and implementing data structures and algorithms.</li>
+                                <!-- <li><span>MySQL</span><br>Adept at efficiently managing databases, particularly using MySQL.</li> -->
+                                <li><span>Database Management</span><br>Demonstrate efficient skills in managing databases.</li>
+                                <li><span>Android Development</span><br>Proficient in development of Android apps.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Tech and Innovations</span><br>I have a keen interest in reading about the latest technological advancements and innovations, making it a captivating hobby for me.</li>
+                                <li><span>Sports</span><br>I engage in various sports activities such as basketball, table tennis, and others for recreational enjoyment.</li>
+                                <li><span>Gardening</span><br>Planting and caring for plants is a passion of mine, bringing me great joy.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Graduation</span><br>Chandigarh University, Mohali, PUNJAB<br>B.E. CSE</li>
+                                <li><span>12th</span><br>Cambridge School, Nalanda, BIHAR<br>PCM (CBSE Board)</li>
+                                <!-- <li><span>10th</span><br>Grizzly Vidyalaya<br>PCME-CS (CBSE Board)</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--------Services---------->  
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Skills</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>C/C++</h2>
+                        <p>I'm Proficient in C++ and use it to solve problems on various online platforms including Leetcode, GeeksforGeeks practice and many more. I have studied Data Structures and Algorithms in C++ as it provides us with OOPs functionalities.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>Android Development</h2>
+                        <p>I have successfully crafted various Android applications, showcasing my proficiency in creating impactful mobile solutions. Among my notable projects is CuMeal, an app that has garnered over 10,000 downloads and maintains a daily active user base of 6,000+.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>MySQL</h2>
+                        <p>I possess a strong command of MySQL as I have utilized it to establish connections with databases and effectively maintain them for my projects.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--------Portfolio---------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/cumeal_logo.png">
+                        <div class="layer">
+                            <h3>Spotify Playlist Recommendation System</h3>
+                            <p>System that recommends songs on the basis of a playlist curated by the user.</p>
+                            <a href="https://github.com/Dhvaniish/Spotify-Playlist-Recommendation-System"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/agecalculator_logo.jpeg">
+                        <div class="layer">
+                            <h3>Sentiment Analysis on Customer Feedback</h3>
+                            <p>Program to analyze the sentiment of text in a given review for a product and generates a corresponding report.</p>
+                            <a href="https://github.com/Dhvaniish/Sentiment-Analysis-on-Customer-Feedback"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/olympics.png">
+                        <div class="layer">
+                            <h3>Olympics Data Analysis</h3>
+                            <p>Performed comprehensive analysis of 120 years of Olympic history, extracting and analyzing athletes' basic bio data and medal results from Athens 1896 to Rio 2016</p>
+                            <a href="https://github.com/Dhvaniish/Olympics-Data-Analysis"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/vishwajeet7456?tab=repositories" class="btn">See more</a>
+            </div>
+        </div>
+<!--------Contact-Me---------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>vishwajeet7456@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 6200776634</p>
+                        <div class="social-icons">
+                            <!-- <a href="https://www.facebook.com/dhvanish.samanta/"><i class="fa-brands fa-facebook"></i></a> -->
+                            <a href="https://twitter.com/Vishwajeet_14_7"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/vishwajeet_14_7/"><i class="fa-brands fa-instagram"></i></i></a>
+                            <a href="https://www.linkedin.com/in/vishwajeet-kumar-r14/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <a href="images/Dhvanish_Samanta_Resume" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Vishwajeet Kumar. Made with <i class="fa-solid fa-heart"></i> by Vishwajeet Kumar. </p>
+            </div>
+        </div>
+        
+        <script src="./main.js"></script>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwCZsx-aC_jvoicdxOiHnoDIfZGBxHE5K3a6kF5C2Wq1KC9rQ4BuAxDjx19haq6fCDAPQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = " "
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
